@@ -10,8 +10,12 @@ body {
     padding: 40px;
 }
 
-input, textarea, #clear, #add, .note {
-    box-shadow: 0 1px 3px #888;
+input,
+textarea,
+#clear,
+#add,
+.note {
+    box-shadow: 0 1px 3px #aaa;
 }
 
 form {
@@ -33,7 +37,7 @@ textarea {
     font-family: sans-serif;
     color: black;
     font-size: 1em;
-    background: #ccc;
+    background: #d1d1d1;
     padding: 0.5em;
     border: 2px solid #0000;
     border-radius: 5px;
@@ -69,8 +73,6 @@ button:hover {
     background: crimson;
 
 }
-
-
 
 input:focus-visible,
 textarea:focus-visible {
@@ -135,6 +137,49 @@ h1 {
 .delete:hover {
     background: crimson;
     color: white;
+}
+
+.timestamp {
+    display: block;
+    margin-top: 1em;
+    color: #666;
+    font-size: 0.8em;
+}
+
+.searchBar {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-bottom: 10px;
+
+    box-shadow: 0 1px 3px #aaa;
+    background: #d1d1d1;
+    border-radius: 5px;
+}
+
+#search {
+    grid-column: span 1;
+    box-shadow: none;
+}
+
+.magnifier {
+    background: none;
+    text-align: center;
+    align-self: center;
+}
+
+.highlight {
+    background: beige;
+}
+
+.results {
+    color: #888;
+}
+
+.empty {
+    margin-top: 1em;
+    font-size: 1.3em;
+    color: #aaa;
+    text-align: center;
 }
 
 @media screen and (max-width: 900px) {

@@ -15,12 +15,15 @@
     <form id='form'>
         <input name='title' placeholder='Title...'>
         <textarea name='text' placeholder='Note...'></textarea>
-        <button id=add type='submit'>Add Note</button>
-        <button id=clear type="button">Clear All Notes</button>
+        <button id='add' type='submit'>Add Note</button>
+        <button id='clear' type="button">Clear All Notes</button>
     </form>
-
-    <div id='notes'>
-        
+    <div>
+        <div class="searchBar">
+            <input id="search" name="search" autocomplete='off' placeholder="Search...">
+            <div class="magnifier">&#128269;</div>
+        </div>
+        <div id='notes'></div>
     </div>
 
     <script src='script.js'></script>
